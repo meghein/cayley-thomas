@@ -5,9 +5,7 @@ import Media from './components/Media'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import './App.scss';
-import { PageHeader } from 'antd';
 
-// import wordmark from 'images/wordmark.png'
 
 function App() {
   const [page, setPage] = useState('home')
@@ -16,48 +14,43 @@ function App() {
     <div className="App">
       {page === 'home' &&
         <div className="home-page">
-          <PageHeader className="site-page-header">
-            <img src="images/wordmark.png" alt="wordmark"/>
-          </PageHeader>
-          <NavBar
-            setPage={setPage}
-          />
+          <div className="content">
+            <img id="wordmark" src="images/wordmark.png" alt="wordmark"/>
+            <NavBar setPage={setPage}/>
+          </div>
+          <Footer className="footer"/>
         </div>
       }
       {page === 'about' &&
         <div className="about-page">
-          <PageHeader className="site-page-header">
+          <div className="content">
             <img src="images/wordmark.png" alt="wordmark"/>
-          </PageHeader>
-          <NavBar
-            setPage={setPage}
-          />
-          <About/>
+            <NavBar setPage={setPage}/>
+            <About/>
+          </div>
+          <Footer/>
         </div>
       }
       {page === 'media' &&
         <div className="media-page">
-          <PageHeader className="site-page-header">
+          <div className="content">
             <img src="images/wordmark.png" alt="wordmark"/>
-          </PageHeader>
-          <NavBar
-            setPage={setPage}
-          />
-          <Media/>
+            <NavBar setPage={setPage}/>
+            <Media/>
+          </div>
+          <Footer/>
         </div>
       }
       {page === 'contact' &&
         <div className="contact-page">
-          <PageHeader className="site-page-header">
+          <div className="content">
             <img src="images/wordmark.png" alt="wordmark"/>
-          </PageHeader>
-          <NavBar
-            setPage={setPage}
-          />
-          <Contact/>
+            <NavBar setPage={setPage}/>
+            <Contact/>
+          </div>
+          <Footer/>
         </div>
       }
-      <Footer/>
     </div>
   );
 }

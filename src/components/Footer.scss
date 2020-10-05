@@ -1,0 +1,25 @@
+.footer{
+  position: fixed;
+  bottom: 1em;
+  // left: 1%;
+  right: 1em;
+}
+
+#social {
+  // display: flex;
+  // flex-direction: row;
+  // justify-content: center;
+	width: 100%;
+	padding: 0;
+  list-style: none;
+  li {
+    padding: 0 .2em;
+    color: #fbf6ec;
+    font-size: 1.5em;
+    cursor: pointer;
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+}
