@@ -3,6 +3,7 @@ import NavBar from './components/NavBar'
 import About from './components/About'
 import Media from './components/Media'
 import Contact from './components/Contact'
+import Footer from './components/Footer'
 import './App.scss';
 import { PageHeader } from 'antd';
 
@@ -56,6 +57,7 @@ function App() {
           <Contact/>
         </div>
       }
+      <Footer/>
     </div>
   );
 }
