@@ -14,6 +14,7 @@ export default function Footer() {
             href="https://www.instagram.com/hicayleythomas/"
             target="_blank"
             rel="noopener noreferrer"
+            alt="https://www.instagram.com/hicayleythomas/"
           >
             <FontAwesomeIcon icon={faInstagram}/>
           </a>
