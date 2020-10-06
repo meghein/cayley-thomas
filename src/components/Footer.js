@@ -1,8 +1,8 @@
 import React from 'react'
 import SpotifyPlayer from 'react-spotify-player';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faFacebook, faInstagram, faTwitter, faSpotify, faYoutube, faBandcamp } from "@fortawesome/free-brands-svg-icons"
-import { faMusic } from "@fortawesome/free-solid-svg-icons"
+import { faFacebook, faInstagram, faTwitter, faSpotify, faApple } from "@fortawesome/free-brands-svg-icons"
+// import { faMusic } from "@fortawesome/free-solid-svg-icons"
 import "./Footer.scss"
 
 export default function Footer() {
@@ -19,22 +19,22 @@ export default function Footer() {
       <ul id="social">
         <li>
           <a
-            className="instagram"
-            href="https://www.instagram.com/hicayleythomas/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon icon={faInstagram}/>
-          </a>
-        </li>
-        <li>
-          <a
           className="facebook"
           href="https://www.facebook.com/hicayleythomas/"
           target="_blank"
           rel="noopener noreferrer"
           >
             <FontAwesomeIcon icon={faFacebook}/>
+          </a>
+        </li>
+        <li>
+          <a
+            className="instagram"
+            href="https://www.instagram.com/hicayleythomas/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faInstagram}/>
           </a>
         </li>
         <li>
@@ -64,27 +64,7 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon icon={faMusic}/>
-          </a>
-        </li>
-        <li>
-          <a
-            className="bandcamp"
-            href="https://cayleythomas.bandcamp.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon icon={faBandcamp}/>
-          </a>
-        </li>
-        <li>
-          <a
-            className="youtube"
-            href="https://www.youtube.com/channel/UCtn6tbusEXHQOrMWXp6eAHg"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon icon={faYoutube}/>
+            <FontAwesomeIcon icon={faApple}/>
           </a>
         </li>
       </ul>   
