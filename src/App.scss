@@ -1,54 +1,31 @@
 .App {
-  position: relative;
   text-align: center;
   min-height: 100%;
-  #wordmark {
-    margin-top: 1em;
-    width: 40%;
-    background-color: #DDBEA9;
-  }
-  ul > li {
-    opacity: 1.0;
-  }
-  
-  ul:hover > li:not(:hover) {
-    opacity: 0.5;
-  }
-  
-  .home-page {
-    height: 100vh;
-    background-image: url("/images/album-no-text.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  .about-page {
-    .wordmark {
+  .content {
+    position: absolute;
+    width: 100%;
+    border: 1px solid black;
+    .title {
       margin-top: 1em;
       width: 40%;
       background-color: #DDBEA9;
     }
-    background-image: url("/images/fabric.png");
-    background-color: #A5A58D;
-    padding-bottom: 4em;
   }
-  .media-page {
-    // background-image: url("/images/fabric.png");
-    background-color:#884A23;
-    // padding-bottom: 6em;
+  ul > li {
+    opacity: 1.0;
   }
-  .music-page {
+  ul:hover > li:not(:hover) {
+    opacity: 0.5;
+  }
+  .home-page {
+    // position: relative;
     height: 100vh;
-    // background-image: url("/images/fabric.png");
-    background-color: #884A23;
-    padding-bottom: 4em;
+    background-image: url("/images/splash-page.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
   }
-  .contact-page {
-    background-image: url("/images/arabesque.png");
-    background-color:#884A23;
-    // padding-bottom: 6em;
-  }
-  .subscribe-page {
-    height: 100vh;
+  .page {
+    min-height: 100%;
     background-image: url("/images/fabric.png");
     background-color: #A5A58D;
     padding-bottom: 4em;

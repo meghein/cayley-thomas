@@ -2,70 +2,39 @@ import React, { useState } from 'react';
 import NavBar from './components/NavBar'
 import About from './components/About'
 import Media from './components/Media'
-import Music from './components/Music'
 import Contact from './components/Contact'
 import MailingList from './components/MailingList'
 import Footer from './components/Footer'
 import './App.scss';
 
 
-function App() {
+export default function App() {
   const [page, setPage] = useState('home')
 
   return (
     <div className="App">
-            <Footer className="footer"/>
-
-      {page === 'home' &&
-        <div className="home-page">
-          <div className="content">
-            <img className="wordmark" src="images/wordmark.png" alt="wordmark"/>
-            <NavBar setPage={setPage}/>
-          </div>
-        </div>
-      }
-      {page === 'about' &&
-        <div className="about-page">
+      <Footer className="footer"/>
+        <div className="page">
           <div className="content">
             <img src="images/wordmark.png" alt="wordmark"/>
             <NavBar setPage={setPage}/>
-            <About/>
+            {page === 'about' &&
+              <About/>
+            }
+            {page === 'media' &&
+              <Media/>
+            }
+            {page === 'contact' &&
+              <Contact/>
+            }
+            {page === 'mailing-list' &&
+              <MailingList/>
+            }
           </div>
-          {/* <Footer/> */}
         </div>
-      }
-      {page === 'media' &&
-        <div className="media-page">
-          <div className="content">
-            <img src="images/wordmark.png" alt="wordmark"/>
-            <NavBar setPage={setPage}/>
-            <Media/>
-          </div>
-          {/* <Footer/> */}
-        </div>
-      }
-      {page === 'contact' &&
-        <div className="contact-page">
-          <div className="content">
-            <img src="images/wordmark.png" alt="wordmark"/>
-            <NavBar setPage={setPage}/>
-            <Contact/>
-          </div>
-          {/* <Footer/> */}
-        </div>
-      }
-      {page === 'subscribe' &&
-        <div className="subscribe-page">
-          <div className="content">
-            <img src="images/wordmark.png" alt="wordmark"/>
-            <NavBar setPage={setPage}/>
-            <MailingList/>
-          </div>
-          {/* <Footer/> */}
-        </div>
+        {page === 'home' &&
+        <div className="home-page"/>
       }
     </div>
   );
 }
-
-export default App;
