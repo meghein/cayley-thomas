@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import NavBar from './components/NavBar'
 import About from './components/About'
 import Media from './components/Media'
+import Music from './components/Music'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import './App.scss';
@@ -37,6 +38,16 @@ function App() {
             <img src="images/wordmark.png" alt="wordmark"/>
             <NavBar setPage={setPage}/>
             <Media/>
+          </div>
+          <Footer/>
+        </div>
+      }
+      {page === 'music' &&
+        <div className="music-page">
+          <div className="content">
+            <img src="images/wordmark.png" alt="wordmark"/>
+            <NavBar setPage={setPage}/>
+            <Music/>
           </div>
           <Footer/>
         </div>
