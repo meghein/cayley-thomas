@@ -4,6 +4,7 @@ import About from './components/About'
 import Media from './components/Media'
 import Music from './components/Music'
 import Contact from './components/Contact'
+import MailingList from './components/MailingList'
 import Footer from './components/Footer'
 import './App.scss';
 
@@ -58,6 +59,16 @@ function App() {
             <img src="images/wordmark.png" alt="wordmark"/>
             <NavBar setPage={setPage}/>
             <Contact/>
+          </div>
+          <Footer/>
+        </div>
+      }
+      {page === 'subscribe' &&
+        <div className="subscribe-page">
+          <div className="content">
+            <img src="images/wordmark.png" alt="wordmark"/>
+            <NavBar setPage={setPage}/>
+            <MailingList/>
           </div>
           <Footer/>
         </div>
