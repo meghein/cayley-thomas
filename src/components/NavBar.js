@@ -12,10 +12,10 @@ export default function NavBar(props) {
     <div>
       <ul id="nav">
         <li onClick={clickHandler} data-id='home'>HOME</li>
-        <li onClick={clickHandler} data-id='about'>ABOUT</li>
-        <li onClick={clickHandler} data-id='media'>MEDIA</li>
-        <li onClick={clickHandler} data-id='contact'>CONTACT</li>
-        <li onClick={clickHandler} data-id='subscribe'>MAILING LIST</li>
+        <li onClick={clickHandler} data-id='about bar'>ABOUT</li>
+        <li onClick={clickHandler} data-id='media bar'>MEDIA</li>
+        <li onClick={clickHandler} data-id='contact bar'>CONTACT</li>
+        <li onClick={clickHandler} data-id='subscribe bar'>MAILING LIST</li>
         <li><a href="https://cayleythomas.bandcamp.com/merch" target="_blank" rel="noopener noreferrer">SHOP</a></li>
       </ul>
     </div>

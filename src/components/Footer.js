@@ -5,9 +5,9 @@ import { faFacebook, faInstagram, faTwitter, faSpotify, faApple } from "@fortawe
 // import { faMusic } from "@fortawesome/free-solid-svg-icons"
 import "./Footer.scss"
 
-export default function Footer() {
+export default function Footer(props) {
   return (
-    <div className="footer">
+    <div id="footer" className={props.className}>
       <span id="spotify-player">
         <SpotifyPlayer
           uri="spotify:album:3aBvYsTSyCAzGyp1buNzXz"

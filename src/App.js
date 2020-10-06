@@ -13,25 +13,25 @@ export default function App() {
 
   return (
     <div className="App">
-      <Footer className="footer"/>
+      <Footer className={page}/>
+      <div id="header" className={page}>
+        <img src="images/wordmark.png" alt="wordmark"/>
+        <NavBar setPage={setPage}/>
+      </div>
       {page === 'home' &&
         <div className="home-page"/>
       }
       <div className="page">
-        <div className="header">
-          <img src="images/wordmark.png" alt="wordmark"/>
-          <NavBar setPage={setPage}/>
-        </div>
-        {page === 'about' &&
+        {page === 'about bar' &&
           <About/>
         }
-        {page === 'media' &&
+        {page === 'media bar' &&
           <Media/>
         }
-        {page === 'contact' &&
+        {page === 'contact bar' &&
           <Contact/>
         }
-        {page === 'subscribe' &&
+        {page === 'subscribe bar' &&
           <MailingList/>
         }
       </div>

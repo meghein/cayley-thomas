@@ -5,7 +5,7 @@
   margin-top: -5px;
 	width: 100%;
 	padding: 0;
-  list-style: none;  
+  list-style: none;
   li {
     float: left;
     display: block;
@@ -19,4 +19,7 @@
       color: inherit;
     }
   }
+}
+#nav ~ .home-page:empty {
+  background-color:#CB997E;
 }

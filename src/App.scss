@@ -8,6 +8,10 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
+  .bar {
+    background-color: #DDBEA9;
+  }
+
   .page {
     min-height: 100%;
     background-image: url("/images/fabric.png");
@@ -15,12 +19,15 @@
     padding-top: 150px;
     padding-bottom: 4em;
   }
-  .header {
+  #header {
+    .menu {
+      background-color:#CB997E;
+    }
     position: fixed;
     top: 0;
     width: 100%;
     height: 150px;
-    background-color: #DDBEA9;
+    
     img {
       margin-top: 1em;
       width: 400px;
