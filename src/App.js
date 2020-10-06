@@ -14,13 +14,14 @@ function App() {
 
   return (
     <div className="App">
+            <Footer className="footer"/>
+
       {page === 'home' &&
         <div className="home-page">
           <div className="content">
-            <img id="wordmark" src="images/wordmark.png" alt="wordmark"/>
+            <img className="wordmark" src="images/wordmark.png" alt="wordmark"/>
             <NavBar setPage={setPage}/>
           </div>
-          <Footer className="footer"/>
         </div>
       }
       {page === 'about' &&
@@ -30,7 +31,7 @@ function App() {
             <NavBar setPage={setPage}/>
             <About/>
           </div>
-          <Footer/>
+          {/* <Footer/> */}
         </div>
       }
       {page === 'media' &&
@@ -40,17 +41,7 @@ function App() {
             <NavBar setPage={setPage}/>
             <Media/>
           </div>
-          <Footer/>
-        </div>
-      }
-      {page === 'music' &&
-        <div className="music-page">
-          <div className="content">
-            <img src="images/wordmark.png" alt="wordmark"/>
-            <NavBar setPage={setPage}/>
-            <Music/>
-          </div>
-          <Footer/>
+          {/* <Footer/> */}
         </div>
       }
       {page === 'contact' &&
@@ -60,7 +51,7 @@ function App() {
             <NavBar setPage={setPage}/>
             <Contact/>
           </div>
-          <Footer/>
+          {/* <Footer/> */}
         </div>
       }
       {page === 'subscribe' &&
@@ -70,7 +61,7 @@ function App() {
             <NavBar setPage={setPage}/>
             <MailingList/>
           </div>
-          <Footer/>
+          {/* <Footer/> */}
         </div>
       }
     </div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import SpotifyPlayer from 'react-spotify-player';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faFacebook, faInstagram, faTwitter, faSpotify, faYoutube, faBandcamp } from "@fortawesome/free-brands-svg-icons"
 import { faMusic } from "@fortawesome/free-solid-svg-icons"
@@ -7,6 +8,14 @@ import "./Footer.scss"
 export default function Footer() {
   return (
     <div className="footer">
+      <span id="spotify-player">
+        <SpotifyPlayer
+          uri="spotify:album:3aBvYsTSyCAzGyp1buNzXz"
+          size='compact'
+          view='list'
+          theme='black'
+        />
+      </span>
       <ul id="social">
         <li>
           <a

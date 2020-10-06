@@ -5,6 +5,7 @@
   #wordmark {
     margin-top: 1em;
     width: 40%;
+    background-color: #DDBEA9;
   }
   ul > li {
     opacity: 1.0;
@@ -15,25 +16,30 @@
   }
   
   .home-page {
-    height: 150vh;
+    height: 100vh;
     background-image: url("/images/album-no-text.jpg");
     background-size: cover;
     background-repeat: no-repeat;
   }
   .about-page {
+    .wordmark {
+      margin-top: 1em;
+      width: 40%;
+      background-color: #DDBEA9;
+    }
     background-image: url("/images/fabric.png");
     background-color: #A5A58D;
     padding-bottom: 4em;
   }
   .media-page {
-    background-image: url("/images/arabesque.png");
+    // background-image: url("/images/fabric.png");
     background-color:#884A23;
     // padding-bottom: 6em;
   }
   .music-page {
     height: 100vh;
-    background-image: url("/images/fabric.png");
-    background-color: #A5A58D;
+    // background-image: url("/images/fabric.png");
+    background-color: #884A23;
     padding-bottom: 4em;
   }
   .contact-page {
