@@ -2,4 +2,12 @@ body {
   margin: 0;
   font-family: 'Bitter', serif;
   font-size: 20px;
+
+  ul > li {
+    opacity: 1.0;
+  }
+  ul:hover > li:not(:hover) {
+    opacity: 0.5;
+  }
+  
 }

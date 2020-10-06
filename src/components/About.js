@@ -3,7 +3,7 @@ import './About.scss'
 
 export default function About() {
   return (
-    <div className='about'>
+    <div id='about'>
       <img src='images/in-flowers.jpg' alt='About in flowers'/>
       <p>
         Cayley Thomas is a singer, guitarist and songwriter whose natural affinity for constructing catchy melodies reveals her striking vocal range and character. Under a delirious guise of simplicity, she weaves sensitive eccentricities and cathartic declarations into her own brand of unique, knowledgeable pop.<br />

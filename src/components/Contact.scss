@@ -1,7 +1,10 @@
-.contact {
+#contact {
   line-height: .5em;
   color: #fbf6ec;
   height: 100vh;
+  .form {
+    padding-top: 9em;
+  }
   h2 {
     text-decoration: underline;
     padding-top: 1em;

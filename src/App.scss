@@ -6,21 +6,21 @@
     background-image: url("/images/splash-page.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 0;
   }
-  .bar {
-    background-color: #DDBEA9;
-  }
-
   .page {
     min-height: 100%;
     background-image: url("/images/fabric.png");
     background-color: #A5A58D;
   }
-  #header {
+  .bar {
+    background-color: #DDBEA9;
     .menu {
       background-color:#CB997E;
     }
+  }
+
+  #header {
+    
     position: fixed;
     top: 0;
     width: 100%;
@@ -30,11 +30,5 @@
       margin-top: 1em;
       width: 400px;
     }
-  }
-  ul > li {
-    opacity: 1.0;
-  }
-  ul:hover > li:not(:hover) {
-    opacity: 0.5;
   }
 }
