@@ -1,13 +1,14 @@
-@font-face {
-  font-family: 'kristopher', sans-serif;
-  src: url("/public/kristopher.otf") format("opentype");
-}
+// @font-face {
+//   font-family: 'kristopher', sans-serif;
+//   src: url("/public/kristopher.otf") format("opentype");
+// }
 .mailing-list {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100vh;
   padding-bottom: 5em;
-  padding-top: 6em;
+  padding-top: 8em;
   :focus {
     outline: none;
   }
@@ -16,20 +17,19 @@
     text-align: center;
     border-radius: 25px;
     border-style: solid;
-    font-size: 1.5em;
+    font-size: 1em;
+    color: #fbf6ec;
     margin: .5em;
+    padding: .5em;
     background-color: inherit;
-    font-family: 'Bitter', serif;
     border-color: #fbf6ec;
   }
   h4 {
-    font-family: 'kristopher', sans-serif;
     color: #fbf6ec;
     font-size: 2em;
     margin-bottom: 5px;
   }
   .form-button {
-    font-family: 'kristopher', serif;
     color: #fbf6ec;
     font-size: 1.5em;
     padding: .3em;

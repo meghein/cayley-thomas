@@ -1,7 +1,19 @@
+@font-face {
+  font-family: 'Futura-Medium';
+  src: url('/public/fonts/Futura-Medium.eot');
+  src: url('/public/fonts/Futura-Medium.eot?#iefix') format('embedded-opentype'),
+       url('/public/fonts/Futura-Medium.svg#Futura-Medium') format('svg'),
+       url('/public/fonts/Futura-Medium.ttf') format('truetype'),
+       url('/public/fonts/Futura-Medium.woff') format('woff'),
+       url('/public/fonts/Futura-Medium.woff2') format('woff2');
+  font-weight: normal;
+  // font-style: normal;
+}
+
 body {
   margin: 0;
-  font-family: 'Bitter', serif;
-  font-size: 20px;
+  font-family: 'Futura-Medium';
+  font-weight: 100;
 
   ul > li {
     opacity: 1.0;
