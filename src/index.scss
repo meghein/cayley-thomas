@@ -7,8 +7,12 @@
        url('/public/fonts/Futura-Medium.woff') format('woff'),
        url('/public/fonts/Futura-Medium.woff2') format('woff2');
   font-weight: normal;
-  // font-style: normal;
 }
+
+// @font-face {
+//   font-family: 'kristopher', sans-serif;
+//   src: url("/public/kristopher.otf") format("opentype");
+// }
 
 body {
   margin: 0;
