@@ -10,7 +10,7 @@ export default function NavBar(props) {
 
   return (
     <div>
-      <ul id="nav">
+      <ul id={props.id}>
         <li onClick={clickHandler} data-id='home'>HOME</li>
         <li onClick={clickHandler} data-id='about bar'>ABOUT</li>
         <li onClick={clickHandler} data-id='media bar'>MEDIA</li>

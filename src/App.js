@@ -16,7 +16,7 @@ export default function App() {
       <Footer className={page}/>
       <div id="header" className={page}>
         <img src="images/wordmark.png" alt="wordmark"/>
-        <NavBar setPage={setPage}/>
+        <NavBar setPage={setPage} id="nav"/>
       </div>
       {page === 'home' &&
         <div className="home-page"/>
