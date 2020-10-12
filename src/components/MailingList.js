@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import './MailingList.scss'
 
-export default function MailingList() {
+export default function MailingList(props) {
   const [user, setUser] = useState({
     emailValue: '',
     nameValue: '',
   })
   return (
-    <form className="mailing-list" action="https://cayleythomas.us20.list-manage.com/subscribe/post" method="POST" noValidate >
+    <form className={props.subscribe} action="https://cayleythomas.us20.list-manage.com/subscribe/post" method="POST" noValidate >
       <input type="hidden" name="u" value="78686e4b82246c5bba3a92bd0"/>
       <input type="hidden" name="id" value="fef6220761"/>
       <label htmlFor='MERGE1'>
@@ -36,10 +36,10 @@ export default function MailingList() {
 
       <div style={{position: 'absolute', left: '-5000px'}} aria-hidden='true' aria-label="Please leave the following three fields empty">
           <label htmlFor="b_name">Name: </label>
-          <input type="text" name="b_name" tabIndex="-1" value="" placeholder="Freddie" id="b_name"/>
+          <input type="text" name="b_name" tabIndex="-1" defaultValue="" placeholder="Freddie" id="b_name"/>
 
           <label htmlFor="b_email">Email: </label>
-          <input type="email" name="b_email" tabIndex="-1" value="" placeholder="youremail@gmail.com" id="b_email"/>
+          <input type="email" name="b_email" tabIndex="-1" defaultValue="" placeholder="youremail@gmail.com" id="b_email"/>
 
           <label htmlFor="b_comment">Comment: </label>
           <textarea name="b_comment" tabIndex="-1" placeholder="Please comment" id="b_comment"></textarea>

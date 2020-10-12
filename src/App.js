@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import NavBar from './components/NavBar'
 import About from './components/About'
 import Media from './components/Media'
@@ -10,10 +10,24 @@ import './App.scss';
 
 export default function App() {
   const [page, setPage] = useState('home')
+  const [subscribe, setSubscribe] = useState('out-footer')
 
+  useEffect(() => {
+    if (page === 'home') {
+      setSubscribe('out-footer')
+      // console.log(subscribe)
+    }  else if (page === 'subscribe bar') {
+      setSubscribe('mailing-list')
+      // console.log(subscribe)
+    } else {
+      setSubscribe('in-footer')
+    }
+    // console.log(subscribe)
+  }, [page])
+  
   return (
     <div className="App">
-      <Footer className={page}/>
+      <Footer page={page} subscribe={subscribe}/>
       <div id="header" className={page}>
         <img src="images/wordmark.png" alt="wordmark"/>
         <NavBar setPage={setPage} id="nav"/>
@@ -32,7 +46,7 @@ export default function App() {
           <Contact/>
         }
         {page === 'subscribe bar' &&
-          <MailingList/>
+          <MailingList subscribe={subscribe}/>
         }
       </div>
     </div>

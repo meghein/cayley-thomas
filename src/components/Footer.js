@@ -1,6 +1,7 @@
 import React from 'react'
 import SpotifyPlayer from 'react-spotify-player';
-import MailingList from './MailingList';
+import Mailchimp from 'react-mailchimp-form';
+// import MailingList from './MailingList';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faFacebook, faInstagram, faTwitter, faSpotify, faApple } from "@fortawesome/free-brands-svg-icons"
 // import { faMusic } from "@fortawesome/free-solid-svg-icons"
@@ -8,7 +9,7 @@ import "./Footer.scss"
 
 export default function Footer(props) {
   return (
-    <div id="footer" className={props.className}>
+    <div id="footer" className={props.page}>
       <span id="spotify-player">
         <SpotifyPlayer
           uri="spotify:album:3aBvYsTSyCAzGyp1buNzXz"
@@ -17,7 +18,26 @@ export default function Footer(props) {
           theme='black'
         />
       </span>
-      <MailingList className={'subscribe', props.className}/>
+      { props.subscribe === 'in-footer' &&
+        <Mailchimp
+        className='form'
+        action='https://cayleythomas.us20.list-manage.com/subscribe/post?u=78686e4b82246c5bba3a92bd0&amp;id=fef6220761'
+        fields={[
+          {
+            name: 'FNAME',
+            placeholder: 'name',
+            type: 'text',
+            required: true
+          },
+          {
+            name: 'EMAIL',
+            placeholder: 'email',
+            type: 'email',
+            required: true
+          }
+        ]}
+        />
+      }
       <ul id="social">
         <li>
           <a
