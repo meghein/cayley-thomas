@@ -1,5 +1,6 @@
 import React from 'react'
 import SpotifyPlayer from 'react-spotify-player';
+import MailingList from './MailingList';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faFacebook, faInstagram, faTwitter, faSpotify, faApple } from "@fortawesome/free-brands-svg-icons"
 // import { faMusic } from "@fortawesome/free-solid-svg-icons"
@@ -16,6 +17,7 @@ export default function Footer(props) {
           theme='black'
         />
       </span>
+      <MailingList className={'subscribe', props.className}/>
       <ul id="social">
         <li>
           <a
