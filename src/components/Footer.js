@@ -25,6 +25,8 @@ export default function Footer(props) {
       { props.subscribe === 'in-footer' &&
         <Mailchimp
         className='form'
+        data-netlify='true'
+        method='post'
         action='https://cayleythomas.us20.list-manage.com/subscribe/post?u=78686e4b82246c5bba3a92bd0&amp;id=fef6220761'
         fields={[
           {
