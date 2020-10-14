@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import Mailchimp from 'react-mailchimp-form';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faFacebook, faInstagram, faTwitter, faSpotify, faApple } from "@fortawesome/free-brands-svg-icons"
-import { faMusic } from "@fortawesome/free-solid-svg-icons"
+import { faFacebook, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons"
 import "./Footer.scss"
 
 export default function Footer(props) {
@@ -21,7 +20,7 @@ export default function Footer(props) {
   return (
     <div id="footer" className={props.page}>
       <span id="spotify-player">
-      <iframe src="https://open.spotify.com/embed/album/3aBvYsTSyCAzGyp1buNzXz" width="250" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      <iframe title="spotify" src="https://open.spotify.com/embed/album/3aBvYsTSyCAzGyp1buNzXz" width="250" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
       </span>
       { props.subscribe === 'in-footer' &&
         <Mailchimp
@@ -30,13 +29,13 @@ export default function Footer(props) {
         fields={[
           {
             name: 'FNAME',
-            placeholder: 'name',
+            placeholder: 'Name',
             type: 'text',
             required: true
           },
           {
             name: 'EMAIL',
-            placeholder: 'email',
+            placeholder: 'Email',
             type: 'email',
             required: true
           }
@@ -48,7 +47,7 @@ export default function Footer(props) {
             error: "An unexpected internal error has occurred.",
             empty: "You must write an e-mail.",
             duplicate: "Too many subscribe attempts for this email address",
-            button: "Subscribe!"
+            button: "Subscribe"
           }
         }
         />
@@ -99,6 +98,7 @@ export default function Footer(props) {
       {showModal &&
       <div id="modal">
         <iframe
+          title="smart url"
           id="linktree"
           src="http://smarturl.it/howelsecanitellyou"
           name="iframe_a"
