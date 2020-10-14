@@ -6,6 +6,7 @@
     background-image: url("/images/splash-page.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
   }
   .page {
     min-height: 100%;
@@ -25,7 +26,7 @@
     
     img {
       margin-top: 1em;
-      width: 400px;
+      // width: ;
     }
   }
   .bar {
@@ -33,3 +34,11 @@
     background-image: url("/images/binding-light.png");
   }
 }
+
+// @media (max-width: 360) {
+//   .App {
+//     .home-page {
+      
+//   }
+//   }
+// }
