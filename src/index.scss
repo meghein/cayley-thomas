@@ -1,13 +1,15 @@
-@font-face {
-  font-family: 'Futura-Medium';
-  src: url('/public/fonts/Futura-Medium.eot');
-  src: url('/public/fonts/Futura-Medium.eot?#iefix') format('embedded-opentype'),
-       url('/public/fonts/Futura-Medium.svg#Futura-Medium') format('svg'),
-       url('/public/fonts/Futura-Medium.ttf') format('truetype'),
-       url('/public/fonts/Futura-Medium.woff') format('woff'),
-       url('/public/fonts/Futura-Medium.woff2') format('woff2');
-  font-weight: normal;
-}
+// @font-face {
+//   font-family: "FuturaBT-Light";
+//   src: url("/public/fonts/FUTURAL813.eot"); /* IE9 Compat Modes */
+//   src: url("/public/fonts/FUTURAL813.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+//     url("/public/fonts/FUTURAL813.otf") format("opentype"), /* Open Type Font */
+//     url("/public/fonts/FUTURAL813.svg") format("svg"), /* Legacy iOS */
+//     url("/public/fonts/FUTURAL813.ttf") format("truetype"), /* Safari, Android, iOS */
+//     url("/public/fonts/FUTURAL813.woff") format("woff"), /* Modern Browsers */
+//     url("/public/fonts/FUTURAL813.woff2") format("woff2"); /* Modern Browsers */
+//   font-weight: normal;
+//   font-style: normal;
+// }
 
 // @font-face {
 //   font-family: 'kristopher', sans-serif;
@@ -16,9 +18,9 @@
 
 body {
   margin: 0;
-  font-family: 'Futura-Medium';
-  // font-family: 'Montserrat', 'serif';
-  font-weight: 100;
+  // font-family: 'FuturaBT-Light', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
 
   ul > li {
     opacity: 1.0;

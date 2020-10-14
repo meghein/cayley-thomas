@@ -36,6 +36,16 @@ export default function Footer(props) {
             required: true
           }
         ]}
+        messages = {
+          {
+            sending: "Sending...",
+            success: "Thank you for subscribing!",
+            error: "An unexpected internal error has occurred.",
+            empty: "You must write an e-mail.",
+            duplicate: "Too many subscribe attempts for this email address",
+            button: "Subscribe!"
+          }
+        }
         />
       }
       <ul id="social">

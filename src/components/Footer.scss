@@ -31,9 +31,36 @@
     }
   }
   form {
-    font-family: 'Futura';
+    
     input {
-      margin: 1em;
+      font-family: 'Poppins', sans-serif;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      padding: 5px;
+      font-size: 1em;
+      border-style: solid;
+      opacity: 70%;
+      // background-color: inherit;
+      border-color: #fbf6ec;
+      :focus {
+        outline: none;
+      }
+    }
+    button {
+      font-family: 'Poppins', sans-serif;
+      color:  #575656;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      padding: 5px;
+      font-size: 1em;
+      border-style: solid;
+      background-color: inherit;
+      // border-color: #fbf6ec;
+    }
+    .msg-alert p {
+      color: #575656 !important;
+      // margin-top: -20px;
+      // font-size: .em;
     }
   }
 }
