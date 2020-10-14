@@ -27,7 +27,7 @@ export default function Footer(props) {
       <iframe title="spotify" src="https://open.spotify.com/embed/album/3aBvYsTSyCAzGyp1buNzXz" width="250" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
       </span>
       { props.subscribe === 'in-footer' &&
-        <form action="https://cayleythomas.us20.list-manage.com/subscribe/post" method="POST" noValidate id="footer-form">
+        <form name="footer-subscribe" action="https://cayleythomas.us20.list-manage.com/subscribe/post" method="POST" noValidate id="footer-form" data-netlify="true">
         <input type="hidden" name="u" value="78686e4b82246c5bba3a92bd0"/>
         <input type="hidden" name="id" value="fef6220761"/>
         <label htmlFor='MERGE1'>
