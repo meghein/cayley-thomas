@@ -49,7 +49,7 @@
       outline: none;
     }
   }
-  #footer-form {
+  form {
     input {
       font-family: 'Poppins', sans-serif;
       margin-left: 1rem;
@@ -64,16 +64,17 @@
         outline: none;
       }
     }
-    .footer-form-button {
+    button {
       font-family: 'Poppins', sans-serif;
       color:  #767676;
       margin-left: 1rem;
       margin-right: 1rem;
       padding: 5px;
       font-size: 1em;
-      border-color: #767676;
+      border-style: solid;
       background-color: inherit;
     }
+
   }
 }
 
