@@ -1,22 +1,21 @@
-import React from 'react'
-import SpotifyPlayer from 'react-spotify-player';
+import React, { useState } from 'react'
 import Mailchimp from 'react-mailchimp-form';
-// import MailingList from './MailingList';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faFacebook, faInstagram, faTwitter, faSpotify, faApple } from "@fortawesome/free-brands-svg-icons"
-// import { faMusic } from "@fortawesome/free-solid-svg-icons"
+import { faMusic } from "@fortawesome/free-solid-svg-icons"
 import "./Footer.scss"
 
 export default function Footer(props) {
+  const [showModal, setShowModal] = useState(false)
+
+  function openModal() {
+    setShowModal(true)
+  }
+
   return (
     <div id="footer" className={props.page}>
       <span id="spotify-player">
-        <SpotifyPlayer
-          uri="spotify:album:3aBvYsTSyCAzGyp1buNzXz"
-          size='compact'
-          view='list'
-          theme='black'
-        />
+      <iframe src="https://open.spotify.com/embed/album/3aBvYsTSyCAzGyp1buNzXz" width="250" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
       </span>
       { props.subscribe === 'in-footer' &&
         <Mailchimp
@@ -80,26 +79,22 @@ export default function Footer(props) {
           </a>
         </li>
         <li>
-          <a
-            className="spotify"
-            href="https://open.spotify.com/artist/2YN6tsEmqzCKNYV5Irgzkv"
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            className="music"
+            onClick={openModal}
           >
-            <FontAwesomeIcon icon={faSpotify}/>
-          </a>
+            <FontAwesomeIcon icon={faMusic}/>
+          </button>
         </li>
-        <li>
-          <a
-            className="apple"
-            href="https://music.apple.com/artist/cayley-thomas/784335170"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon icon={faApple}/>
-          </a>
-        </li>
-      </ul>   
+      </ul>
+      {showModal &&
+      <div id="modal">
+        <iframe
+          id="linktree"
+          src="http://smarturl.it/howelsecanitellyou"
+          name="iframe_a"
+        />
+      </div>}
     </div>
   )
 }
