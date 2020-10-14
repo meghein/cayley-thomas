@@ -12,6 +12,12 @@ export default function Footer(props) {
     setShowModal(true)
   }
 
+  window.onclick = function(event) {
+    if (event.target === document.getElementById("modal")) {
+      setShowModal(false);
+    }
+  }
+
   return (
     <div id="footer" className={props.page}>
       <span id="spotify-player">
@@ -47,46 +53,49 @@ export default function Footer(props) {
         }
         />
       }
-      <ul id="social">
-        <li>
-          <a
-          className="facebook"
-          href="https://www.facebook.com/hicayleythomas/"
-          target="_blank"
-          rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon icon={faFacebook}/>
-          </a>
-        </li>
-        <li>
-          <a
-            className="instagram"
-            href="https://www.instagram.com/hicayleythomas/"
+      <div id="right-footer">
+        <ul id="social">
+          <li>
+            <a
+            className="facebook"
+            href="https://www.facebook.com/hicayleythomas/"
             target="_blank"
             rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon icon={faInstagram}/>
-          </a>
-        </li>
-        <li>
-          <a
-            className="twitter"
-            href="https://twitter.com/hicayleythomas"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon icon={faTwitter}/>
-          </a>
-        </li>
-        <li>
-          <button
-            className="music"
-            onClick={openModal}
-          >
-            <FontAwesomeIcon icon={faMusic}/>
-          </button>
-        </li>
-      </ul>
+            >
+              <FontAwesomeIcon icon={faFacebook}/>
+            </a>
+          </li>
+          <li>
+            <a
+              className="instagram"
+              href="https://www.instagram.com/hicayleythomas/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon icon={faInstagram}/>
+            </a>
+          </li>
+          <li>
+            <a
+              className="twitter"
+              href="https://twitter.com/hicayleythomas"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon icon={faTwitter}/>
+            </a>
+          </li>
+          {/* <li>
+          </li> */}
+        </ul>
+        <button
+          className="music"
+          onClick={openModal}
+        >
+          {/* <FontAwesomeIcon icon={faMusic}/> */}
+          Buy/Stream
+        </button>
+      </div>
       {showModal &&
       <div id="modal">
         <iframe
