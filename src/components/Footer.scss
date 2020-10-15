@@ -47,10 +47,12 @@
       background-color: inherit;
       border: 1px solid #fbf6ec;
       margin-bottom: 1em;
-      font-size: 1em;
-      font-family: 'Poppins', sans-serif;
+      font-size: 1.2em;
+      font-family: 'Open Sans Condensed', sans-serif;
       color: #fbf6ec;
       outline: none;
+      margin-top:-5px;
+      cursor: pointer;
     }
     @media (max-width: 390px) {
       font-size: .7em;
@@ -59,7 +61,7 @@
   form {
     input {
       display: inline-block;
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Open Sans Condensed', sans-serif;
       margin-left: .5rem;
       margin-right: .5rem;
       padding: 5px;
@@ -74,6 +76,10 @@
       @media (min-width: 789px) and (max-width: 912px) {
         margin: 2px;
       }
+    }
+    .button {
+      color: #97908b;
+      cursor: pointer;
     }
     @media (max-width: 788px) {
       display: none
