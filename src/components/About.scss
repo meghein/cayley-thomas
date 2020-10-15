@@ -17,12 +17,12 @@
   }
   p{
     text-align: justify;
-    width: 80%;
+    width: 50%;
     font-size: .8em;
       line-height: 1.2em;
     padding-bottom: 8em;
     @media (max-width: 600px) {
-      
+      min-width: 80%;
     }
   }
 }
