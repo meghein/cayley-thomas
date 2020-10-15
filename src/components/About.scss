@@ -3,15 +3,23 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  min-height: 100vh;
   color: #0a2315;
-  padding-bottom: 7em;
-  padding-top: 10em;
   img{
+    padding-top: 10em;
     width: 50%;
+    @media (max-width: 600px) {
+      min-width: 80%;
+    }
   }
   p{
     text-align: justify;
     width: 80%;
-    line-height: 2em;
+    font-size: .8em;
+      line-height: 1.2em;
+    padding-bottom: 8em;
+    @media (max-width: 600px) {
+      
+    }
   }
 }
