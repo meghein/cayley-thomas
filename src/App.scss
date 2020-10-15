@@ -2,15 +2,11 @@
   text-align: center;
   min-height: 100%;
   .home-page {
-    height: 120vh;
+    min-height: 100vh;
     background-image: url("/images/splash-page.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    @media (max-width: 600px) {
-      height:100vh;
-      // background-size: auto 100%;
-    }
   }
   .page {
     min-height: 100%;
@@ -20,7 +16,6 @@
   #header.bar {
     background-color:#DDBEA9;
     background-image: url("/images/binding-light.png")
-    // background-image: none;
   }
   #header {
     position: fixed;
