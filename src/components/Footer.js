@@ -27,45 +27,42 @@ export default function Footer(props) {
       <iframe title="spotify" className="spotify" src="https://open.spotify.com/embed/album/3aBvYsTSyCAzGyp1buNzXz" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
       </span>
       { props.subscribe === 'in-footer' &&
-        <><form id="hidden-form"></form>
-        <form className="footer-form" action="https://cayleythomas.us20.list-manage.com/subscribe/post" method="POST" noValidate >
-        <input type="hidden" name="u" value="78686e4b82246c5bba3a92bd0"/>
-        <input type="hidden" name="id" value="fef6220761"/>
-        <label htmlFor='TEXTYUI_3'>
-            <input 
-                type="text" 
-                name="FNAME" 
-                id="TEXTYUI_3"
-                placeholder="Name"
-                value={user.nameValue} 
-                onChange={(e)=>{setUser({nameValue: e.target.value});}}
-            />
-        </label>
-        <label htmlFor='MERGE0'>
-            <input 
-                type="email" 
-                name="EMAIL" 
-                id="MERGE0"
-                placeholder="Email"
-                value={user.emailValue} 
-                onChange={ (e)=>{setUser({emailValue: e.target.value});} } 
-                autoCapitalize="off" 
-                autoCorrect="off"
-              /> 
-        </label>
-        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="footer-form-button"/>
-  
-        <div style={{position: 'absolute', left: '-5000px'}} aria-hidden='true' aria-label="Please leave the following three fields empty">
-            <label htmlFor="b_name">Name: </label>
-            <input type="text" name="b_name" tabIndex="-1" defaultValue="" placeholder="Freddie" id="b_name"/>
-  
-            <label htmlFor="b_email">Email: </label>
-            <input type="email" name="b_email" tabIndex="-1" defaultValue="" placeholder="youremail@gmail.com" id="b_email"/>
-  
-            <label htmlFor="b_comment">Comment: </label>
-            <textarea name="b_comment" tabIndex="-1" placeholder="Please comment" id="b_comment"></textarea>
+        <div id="mc_embed_signup">
+          <form action="https://cayleythomas.us20.list-manage.com/subscribe/post?u=78686e4b82246c5bba3a92bd0&amp;id=fef6220761" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
+              <div id="mc_embed_signup_scroll">
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    name="TEXTYUI_3"
+                    className=""
+                    id="mce-TEXTYUI_3"
+                    value={user.nameValue} 
+                    onChange={(e)=>{setUser({nameValue: e.target.value});}}
+                  />
+                  <input
+                    type="email" 
+                    placeholder="Email"
+                    name="EMAIL"
+                    className="required email"
+                    id="mce-EMAIL"
+                    value={user.emailValue} 
+                    onChange={ (e)=>{setUser({emailValue: e.target.value});} } 
+                    autoCapitalize="off" 
+                    autoCorrect="off"
+                  />
+                  <input type="submit" defaultValue="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button"/>
+
+                  <div id="mce-responses" className="clear">
+                    <div className="response" id="mce-error-response" style={{display:"none"}}></div>
+                    <div className="response" id="mce-success-response" style={{display:"none"}}></div>
+                  </div>
+
+                  <div style={{position: "absolute", left: "-5000px"}} aria-hidden="true">
+                    <input type="text" name="b_78686e4b82246c5bba3a92bd0_fef6220761" tabIndex="-1" defaultValue=""/>
+                  </div>
+              </div>
+          </form>
         </div>
-      </form></>
       }
       <div id="right-footer">
         <ul id="social">

@@ -20,9 +20,6 @@
       height: 80px;
     }
   }
-  #hidden-form {
-    display:none;
-  }
   #right-footer {
     display: flex;
     flex-direction: column;
@@ -50,7 +47,6 @@
       background-color: inherit;
       border: 1px solid #fbf6ec;
       margin-bottom: 1em;
-      // border: none;
       font-size: 1em;
       font-family: 'Poppins', sans-serif;
       color: #fbf6ec;
