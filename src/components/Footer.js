@@ -23,11 +23,11 @@ export default function Footer(props) {
 
   return (
     <div id="footer" className={props.page}>
-      <span id="spotify-player">
+      <span id="spotify-player" className="box">
       <iframe title="spotify" className="spotify" src="https://open.spotify.com/embed/album/3aBvYsTSyCAzGyp1buNzXz" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
       </span>
       { props.subscribe === 'in-footer' &&
-        <div id="mc_embed_signup">
+        <div id="mc_embed_signup" className="box">
           <form action="https://cayleythomas.us20.list-manage.com/subscribe/post?u=78686e4b82246c5bba3a92bd0&amp;id=fef6220761" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
               <div id="mc_embed_signup_scroll">
                   <input
@@ -64,7 +64,17 @@ export default function Footer(props) {
           </form>
         </div>
       }
-      <div id="right-footer">
+      {showModal &&
+        <div id="modal">
+          <iframe
+            title="smart url"
+            id="linktree"
+            src="https://smarturl.it/howelsecanitellyou"
+            name="iframe_a"
+          />
+        </div>
+      }
+      <div id="right-footer" className="box">
         <ul id="social">
           <li>
             <a
@@ -103,19 +113,9 @@ export default function Footer(props) {
           className="music"
           onClick={openModal}
         >
-          {/* <FontAwesomeIcon icon={faMusic}/> */}
           Buy/Stream
         </button>
       </div>
-      {showModal &&
-      <div id="modal">
-        <iframe
-          title="smart url"
-          id="linktree"
-          src="https://smarturl.it/howelsecanitellyou"
-          name="iframe_a"
-        />
-      </div>}
     </div>
   )
 }

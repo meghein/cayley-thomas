@@ -9,6 +9,7 @@
   align-items: center;
   z-index:50;
   
+  
   #spotify-player {
     margin: .5em;
     opacity: 1;
@@ -24,9 +25,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    // width: 250px;
     #social {
-      margin: .5em;
+      margin: auto;
+      margin-bottom: 5px;
       display: flex;
       list-style: none;
       padding-inline-start: 0;
@@ -42,26 +44,25 @@
       }
     }
     button {
+      padding: auto;
       text-decoration: none;
       color: inherit;
       background-color: inherit;
       border: 1px solid #fbf6ec;
-      margin-bottom: 1em;
       font-size: 1.2em;
       font-family: 'Open Sans Condensed', sans-serif;
       color: #fbf6ec;
       outline: none;
-      margin-top:-5px;
       cursor: pointer;
     }
     @media (max-width: 390px) {
       font-size: .7em;
-      margin-right: 1em;
     }
   }
   form {
-    input {
+    align-self: center;
 
+    input {
       display: inline-block;
       font-family: 'Open Sans Condensed', sans-serif;
       margin-left: .5rem;
