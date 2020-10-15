@@ -27,6 +27,7 @@ export default function Footer(props) {
       <iframe title="spotify" className="spotify" src="https://open.spotify.com/embed/album/3aBvYsTSyCAzGyp1buNzXz" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
       </span>
       { props.subscribe === 'in-footer' &&
+        <><form id="hidden-form"></form>
         <form className="footer-form" action="https://cayleythomas.us20.list-manage.com/subscribe/post" method="POST" noValidate >
         <input type="hidden" name="u" value="78686e4b82246c5bba3a92bd0"/>
         <input type="hidden" name="id" value="fef6220761"/>
@@ -64,7 +65,7 @@ export default function Footer(props) {
             <label htmlFor="b_comment">Comment: </label>
             <textarea name="b_comment" tabIndex="-1" placeholder="Please comment" id="b_comment"></textarea>
         </div>
-      </form>
+      </form></>
       }
       <div id="right-footer">
         <ul id="social">
