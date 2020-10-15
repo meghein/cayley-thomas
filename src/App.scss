@@ -2,7 +2,7 @@
   text-align: center;
   min-height: 100%;
   .home-page {
-    height: 100vh;
+    height: 120vh;
     background-image: url("/images/splash-page.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -26,7 +26,7 @@
     
     img {
       margin-top: 1em;
-      // width: ;
+      max-width: 80%;
     }
   }
   .bar {
@@ -34,11 +34,3 @@
     background-image: url("/images/binding-light.png");
   }
 }
-
-// @media (max-width: 360) {
-//   .App {
-//     .home-page {
-      
-//   }
-//   }
-// }

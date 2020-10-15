@@ -1,27 +1,18 @@
 #nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   margin-top: -5px;
   width: 100%;
   height: 3.5em;
 	padding: 0;
   list-style: none;
   li {
-    float: left;
-    display: block;
+    display: inline-block;
     padding: 8px 15px;
     text-decoration: none;
     color: #fbf6ec;
-    font-size: 1.2em;
     cursor: pointer;
     a {
       text-decoration: none;
       color: inherit;
     }
   }
-}
-#nav ~ .home-page:empty {
-  background-color:#CB997E;
 }
