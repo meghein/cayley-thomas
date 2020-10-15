@@ -15,6 +15,13 @@
     :not(:hover) {
       opacity: 0.8;
     }
+    .spotify {
+      width: 250px;
+      height: 80px;
+      @media (max-width: 600px) {
+        width: 80px;
+      }
+    }
   }
   #right-footer {
     display: flex;
@@ -74,7 +81,9 @@
       border-style: solid;
       background-color: inherit;
     }
-
+    @media (max-width: 600px) {
+      display: none
+    }
   }
 }
 

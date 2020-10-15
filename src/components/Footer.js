@@ -20,7 +20,7 @@ export default function Footer(props) {
   return (
     <div id="footer" className={props.page}>
       <span id="spotify-player">
-      <iframe title="spotify" src="https://open.spotify.com/embed/album/3aBvYsTSyCAzGyp1buNzXz" width="250" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      <iframe title="spotify" className="spotify" src="https://open.spotify.com/embed/album/3aBvYsTSyCAzGyp1buNzXz" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
       </span>
       { props.subscribe === 'in-footer' &&
         <Mailchimp
