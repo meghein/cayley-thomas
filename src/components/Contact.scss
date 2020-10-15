@@ -3,7 +3,10 @@
   color: #fbf6ec;
   height: 100vh;
   .form {
-    padding-top: 9em;
+    padding-top: 7em;
+    @media (min-width: 551px){
+      padding-top: 10.5em
+    }
   }
   h2 {
     text-decoration: underline;

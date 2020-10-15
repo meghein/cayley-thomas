@@ -11,7 +11,7 @@ export default function MailingList(props) {
       <input type="hidden" name="u" value="78686e4b82246c5bba3a92bd0"/>
       <input type="hidden" name="id" value="fef6220761"/>
       <label htmlFor='MERGE1'>
-          <h4>Name:</h4>
+          <h4 className="name">Name:</h4>
           <input 
               type="text" 
               name="FNAME" 

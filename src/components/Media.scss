@@ -3,7 +3,10 @@
   flex-direction: column;
   align-items: center;
   padding-bottom: 5em;
-  padding-top: 10.5em;
+  padding-top: 9em;
+  @media (min-width: 551px){
+    padding-top: 10.5em
+  }
   .player {
     padding-bottom: 3em;
     max-width: 90%;

@@ -6,10 +6,13 @@
   min-height: 100vh;
   color: #0a2315;
   img{
-    padding-top: 10em;
+    padding-top: 8em;
     width: 50%;
     @media (max-width: 600px) {
       min-width: 80%;
+    }
+    @media (min-width: 551px){
+      padding-top: 10.5em
     }
   }
   p{
