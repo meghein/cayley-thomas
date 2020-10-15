@@ -112,7 +112,7 @@ export default function Footer(props) {
         <iframe
           title="smart url"
           id="linktree"
-          src="http://smarturl.it/howelsecanitellyou"
+          src="https://smarturl.it/howelsecanitellyou"
           name="iframe_a"
         />
       </div>}
