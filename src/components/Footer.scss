@@ -70,6 +70,9 @@
       :focus {
         outline: none;
       }
+      @media (min-width: 789px) and (max-width: 912px) {
+        margin-bottom: 10px;
+      }
     }
     button {
       font-family: 'Poppins', sans-serif;
@@ -81,7 +84,7 @@
       border-style: solid;
       background-color: inherit;
     }
-    @media (max-width: 600px) {
+    @media (max-width: 788px) {
       display: none
     }
   }
