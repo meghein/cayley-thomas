@@ -18,7 +18,7 @@
     .spotify {
       width: 250px;
       height: 80px;
-      @media (max-width: 600px) {
+      @media (max-width: 400px) {
         width: 80px;
       }
     }
@@ -108,5 +108,11 @@
   padding: 10px;
   border: none;
   height: 70%;
-  width: 40%;
+  width: 65%;
+  @media (min-width: 400px) and (max-width: 540px) {
+    width: 80%;
+  }
+  @media (max-width: 399px) {
+    width: 95%;
+  }
 }
