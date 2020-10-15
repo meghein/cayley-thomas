@@ -18,15 +18,13 @@
     .spotify {
       width: 250px;
       height: 80px;
-      @media (max-width: 400px) {
-        width: 80px;
-      }
     }
   }
   #right-footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     #social {
       margin: .5em;
       display: flex;
@@ -48,12 +46,15 @@
       color: inherit;
       background-color: inherit;
       border: 1px solid #fbf6ec;
-      margin-bottom: .5em;
+      margin-bottom: 1em;
       // border: none;
       font-size: 1em;
       font-family: 'Poppins', sans-serif;
       color: #fbf6ec;
       outline: none;
+    }
+    @media (max-width: 390px) {
+      font-size: .7em;
     }
   }
   form {
