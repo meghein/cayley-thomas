@@ -26,7 +26,7 @@ export default function Footer(props) {
       <span id="spotify-player" className="box">
       <iframe title="spotify" className="spotify" src="https://open.spotify.com/embed/album/3aBvYsTSyCAzGyp1buNzXz" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
       </span>
-      { props.subscribe === 'in-footer' &&
+      { props.subscribe === 'gone' &&
         <div className="subsribe-footer">
         <h5>Let's Stay in Touch</h5>
         <p className="signup">Sign up to receive news and updates.</p>
@@ -111,8 +111,6 @@ export default function Footer(props) {
               <FontAwesomeIcon icon={faTwitter}/>
             </a>
           </li>
-          {/* <li>
-          </li> */}
         </ul>
         <button
           className="music"

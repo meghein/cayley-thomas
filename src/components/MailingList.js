@@ -9,7 +9,7 @@ export default function MailingList(props) {
   return (
     <div className="subscribe-page">
       <h3>Let's Stay in Touch</h3>
-      <p className="signup">Sign up to receive news and updates.</p>
+      <p className="signup">Sign up to receive news and updates</p>
       <form className={props.subscribe} action="https://cayleythomas.us20.list-manage.com/subscribe/post" method="POST" noValidate >
         <input type="hidden" name="u" value="78686e4b82246c5bba3a92bd0"/>
         <input type="hidden" name="id" value="fef6220761"/>
