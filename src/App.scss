@@ -31,6 +31,10 @@
   }
   .bar {
     background-color: #ddbea99f;
-    // background-image: url("/images/binding-light.png");
+    @media (max-width: 1200px) {
+      background-color:#DDBEA9;
+      background-image: url("/images/binding-light.png");
+
+    }
   }
 }
