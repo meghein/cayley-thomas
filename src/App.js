@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+// import { useCookies } from 'react-cookie';
 import NavBar from './components/NavBar'
 import About from './components/About'
 import Media from './components/Media'
@@ -9,8 +10,14 @@ import './App.scss';
 
 
 export default function App() {
+  // const [cookies, setCookie] = useCookies([]);
   const [page, setPage] = useState('home')
   const [subscribe, setSubscribe] = useState('out-footer')
+
+  // useEffect(() => {
+  //   setCookie('_ga', '_spotify',{path: '/', domain: '.spotify.com/', sameSite: 'none', secure: true})
+  //   console.log(cookies)
+  // }, [cookies])
 
   useEffect(() => {
     if (page === 'home') {
