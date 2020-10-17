@@ -12,6 +12,7 @@
     margin: 0;
   }
   .mailing-list {
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,6 +20,9 @@
       outline: none;
     }
     input {
+      color: #fbf6ec;
+      font-size: 1em;
+      font-family: 'Nunito Sans', sans-serif;
       text-align: center;
       border-style: solid;
       margin: .5em;

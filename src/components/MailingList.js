@@ -13,13 +13,14 @@ export default function MailingList(props) {
       <form className={props.subscribe} action="https://cayleythomas.us20.list-manage.com/subscribe/post" method="POST" noValidate >
         <input type="hidden" name="u" value="78686e4b82246c5bba3a92bd0"/>
         <input type="hidden" name="id" value="fef6220761"/>
-        <label htmlFor='MERGE1'>
+        <label htmlFor='TEXTYUI_3'>
             <h4 className="name">Name:</h4>
             <input 
                 type="text" 
                 name="FNAME" 
-                id="MERGE1" 
-                value={user.nameValue} 
+                id="TEXTYUI_3" 
+                className="textarea"
+                value={user.nameValue}
                 onChange={(e)=>{setUser({nameValue: e.target.value});}}
             />
         </label>
@@ -29,6 +30,7 @@ export default function MailingList(props) {
                 type="email" 
                 name="EMAIL" 
                 id="MERGE0"
+                className="textarea"
                 value={user.emailValue} 
                 onChange={ (e)=>{setUser({emailValue: e.target.value});} } 
                 autoCapitalize="off" 
