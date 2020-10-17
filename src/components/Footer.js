@@ -27,6 +27,9 @@ export default function Footer(props) {
       <iframe title="spotify" className="spotify" src="https://open.spotify.com/embed/album/3aBvYsTSyCAzGyp1buNzXz" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
       </span>
       { props.subscribe === 'in-footer' &&
+        <div className="subsribe-footer">
+        <h5>Let's Stay in Touch</h5>
+        <p className="signup">Sign up to receive news and updates.</p>
         <div id="mc_embed_signup" className="box">
           <form action="https://cayleythomas.us20.list-manage.com/subscribe/post?u=78686e4b82246c5bba3a92bd0&amp;id=fef6220761" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
               <div id="mc_embed_signup_scroll">
@@ -62,6 +65,8 @@ export default function Footer(props) {
                   </div>
               </div>
           </form>
+          <p className="disclaimer">We respect your privacy and will never share your information with third parties.</p>
+        </div>
         </div>
       }
       {showModal &&
