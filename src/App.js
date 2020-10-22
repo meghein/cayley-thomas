@@ -45,10 +45,12 @@ export default function App() {
       }
       <div className="page">
         {page === 'about bar' &&
-          <About/>
+          <><About/>
+          <Factor/></>
         }
         {page === 'media bar' &&
-          <Media/>
+          <><Media/>
+          <Factor/></>
         }
         {page === 'contact bar' &&
           <Contact/>
@@ -56,7 +58,6 @@ export default function App() {
         {page === 'subscribe bar' &&
           <MailingList subscribe={subscribe}/>
         }
-        {page !== 'home' && <Factor/>}
       </div>
     </div>
   );
