@@ -6,6 +6,7 @@ import Media from './components/Media'
 import Contact from './components/Contact'
 import MailingList from './components/MailingList'
 import Footer from './components/Footer'
+import Factor from './components/Factor'
 import './App.scss';
 
 
@@ -55,6 +56,7 @@ export default function App() {
         {page === 'subscribe bar' &&
           <MailingList subscribe={subscribe}/>
         }
+        {page !== 'home' && <Factor/>}
       </div>
     </div>
   );
