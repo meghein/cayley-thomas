@@ -30,4 +30,10 @@ const footer = {
 	
 }
 
-export { about, contact, footer }
+const subscribe = {
+	post: 'https://cayleythomas.us20.list-manage.com/subscribe/post',
+	unique: '78686e4b82246c5bba3a92bd0',
+	id: 'fef6220761',
+}
+
+export { about, contact, footer, subscribe }

@@ -1,18 +1,21 @@
-import React, { useState } from 'react'
-import './MailingList.scss'
+import React, { useState } from 'react';
+import { subscribe } from '../data';
+import './MailingList.scss';
 
 export default function MailingList(props) {
   const [user, setUser] = useState({
     emailValue: '',
     nameValue: '',
-  })
+  });
+  const { post, unique, id } = subscribe;
+
   return (
     <div className="subscribe-page">
       <h3>Let's Stay in Touch</h3>
       <p className="signup">Sign up to receive news and updates</p>
-      <form className={props.subscribe} action="https://cayleythomas.us20.list-manage.com/subscribe/post" method="POST" noValidate >
-        <input type="hidden" name="u" value="78686e4b82246c5bba3a92bd0"/>
-        <input type="hidden" name="id" value="fef6220761"/>
+      <form className={props.subscribe} action={post} method="POST" noValidate >
+        <input type="hidden" name="u" value={unique}/>
+        <input type="hidden" name="id" value={id}/>
         <label htmlFor='TEXTYUI_3'>
             <h4 className="name">Name:</h4>
             <input 
@@ -53,4 +56,4 @@ export default function MailingList(props) {
       <p className="disclaimer">We respect your privacy and will never share your information with third parties.</p>
     </div>
     )
-  }
+  };
