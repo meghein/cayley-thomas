@@ -30,8 +30,8 @@ export default function Footer(props) {
         <ul id="social">
           {Object.entries(social).map(([name, site], index) => {
             return(
-            <li>
-              <a key={`link${index}`} className={name} href={site} target="_blank" rel="noopener noreferrer">
+            <li key={`link${index}`}>
+              <a className={name} href={site} target="_blank" rel="noopener noreferrer">
                 <i className={`fab fa-${name}`}></i>
               </a>
             </li>)
