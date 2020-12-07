@@ -1,4 +1,3 @@
-// ABOUT VARIABLES: //
 const about = {
 	profile_picture: {
 		src: 'images/in-flowers.jpg',
@@ -12,7 +11,7 @@ const about = {
 		'Thomas has a natural ability of crafting songs that are fresh enough for modern indie-rock ears, while drawing on the fuzzy raw warmth of her favourite sounds from mid-century rock and soul.'
 	],
 }
-// CONTACT VARIABLES: //
+
 const contact = {
 	artistName: 'Cayley Thomas',
 	artistEmail: 'info@cayleythomas.com',
@@ -20,4 +19,15 @@ const contact = {
 	managementEmail: 'ryan@velvetantlermgmt.com'
 }
 
-export { about, contact }
+const footer = {
+	spotify: 'https://open.spotify.com/embed/album/3aBvYsTSyCAzGyp1buNzXz',
+	linktree: 'https://smarturl.it/howelsecanitellyou',
+	social: {
+		facebook: 'https://www.facebook.com/hicayleythomas/',
+		instagram: 'https://www.instagram.com/hicayleythomas/',
+		twitter: 'https://twitter.com/hicayleythomas',
+	}
+	
+}
+
+export { about, contact, footer }
