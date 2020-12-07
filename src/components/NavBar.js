@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { nav } from '../data';
 import './NavBar.scss';
 
 export default function NavBar(props) {
@@ -21,26 +20,27 @@ export default function NavBar(props) {
     }
   }
 
+  const list = nav.map((item, index) => {
+    let data, title;
+    item === 'home' ? data = item : data = `${item} bar`
+    item === 'subsribe' ? title = 'MAILING LIST' : title = item.toUpperCase()
+    return <li onClick={clickHandler} data-id={data} key={`nav${index}`}>{title}</li>
+  })
+
+  const shop = (<li><a href="https://cayleythomas.bandcamp.com/merch" target="_blank" rel="noopener noreferrer">SHOP</a></li>)
+
   return (
     <div id="nav-menu">
       <ul id={props.id}>
-        <li onClick={clickHandler} data-id='home'>HOME</li>
-        <li onClick={clickHandler} data-id='about bar'>ABOUT</li>
-        <li onClick={clickHandler} data-id='media bar'>MEDIA</li>
-        <li onClick={clickHandler} data-id='contact bar'>CONTACT</li>
-        <li onClick={clickHandler} data-id='subscribe bar'>MAILING LIST</li>
-        <li><a href="https://cayleythomas.bandcamp.com/merch" target="_blank" rel="noopener noreferrer">SHOP</a></li>
+        {list}
+        {shop}
       </ul>
-      <FontAwesomeIcon id='menu-bar' icon={faBars} onClick={openMenu}/>
+      <i id='menu-bar' className="fas fa-bars" onClick={openMenu}></i>
       {menu &&
         <div id="open-menu">
         <ul id="toggled-menu">
-          <li onClick={clickHandler} data-id='home'>HOME</li>
-          <li onClick={clickHandler} data-id='about bar'>ABOUT</li>
-          <li onClick={clickHandler} data-id='media bar'>MEDIA</li>
-          <li onClick={clickHandler} data-id='contact bar'>CONTACT</li>
-          <li onClick={clickHandler} data-id='subscribe bar'>MAILING LIST</li>
-          <li><a href="https://cayleythomas.bandcamp.com/merch" target="_blank" rel="noopener noreferrer">SHOP</a></li>
+          {list}
+          {shop}
         </ul>
         </div>
       }
