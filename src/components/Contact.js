@@ -1,16 +1,17 @@
 import React from 'react';
-import './Contact.scss'
+import { contact } from '../data';
+import './Contact.scss';
 
 export default function Contact() {
   return (
     <div id='contact'>
       <div className='form'>
         <h2>Artist</h2>
-        <h3>Cayley Thomas</h3>
-        <a href="mailto:info@cayleythomas.com">info@cayleythomas.com</a>
+        <h3>{contact.artistName}</h3>
+        <a href={`mailto:${contact.artistEmail}`}>{contact.artistEmail}</a>
         <h2>Management</h2>
-        <h3>Ryan Gullen</h3>
-        <a href="mailto:ryan@velvetantlermgmt.com">ryan@velvetantlermgmt.com</a>
+        <h3>{contact.managementName}</h3>
+        <a href={`mailto:${contact.managementEmail}`}>{contact.managementEmail}</a>
       </div>
     </div>
   )

@@ -12,5 +12,12 @@ const about = {
 		'Thomas has a natural ability of crafting songs that are fresh enough for modern indie-rock ears, while drawing on the fuzzy raw warmth of her favourite sounds from mid-century rock and soul.'
 	],
 }
+// CONTACT VARIABLES: //
+const contact = {
+	artistName: 'Cayley Thomas',
+	artistEmail: 'info@cayleythomas.com',
+	managementName: 'Ryan Gullen',
+	managementEmail: 'ryan@velvetantlermgmt.com'
+}
 
-export { about }
+export { about, contact }
