@@ -6,9 +6,7 @@ export default function About() {
   return (
     <div id='about'>
       <img src={about.profile_picture.src} alt={about.profile_picture.alt}/>
-      {about.bio.forEach((paragraph) => {
-        return <p>paragraphy</p>
-      })}
+      {about.bio.map(paragraph => <p>{paragraph}</p>)}
     </div>
   )
 };
