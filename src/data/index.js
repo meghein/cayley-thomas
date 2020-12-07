@@ -36,4 +36,14 @@ const subscribe = {
 	id: 'fef6220761',
 }
 
-export { about, contact, footer, subscribe }
+const media = [
+	'https://youtu.be/TSMWmTO3vZ0',
+	'https://youtu.be/CFwoSoLSa68',
+	'https://youtu.be/1vd7kWzMWWo',
+	'https://youtu.be/lzhWd8RspQw',
+	'https://youtu.be/8KJzWeoRlJ0',
+	'https://youtu.be/7s4A6V1Nfng',
+	'https://youtu.be/uWyFuZoLqgc',
+]
+
+export { about, contact, footer, subscribe, media }
