@@ -36,16 +36,16 @@ const subscribe = {
 	id: 'fef6220761',
 }
 
-const media = [
-	'https://youtu.be/TSMWmTO3vZ0',
-	'https://youtu.be/CFwoSoLSa68',
-	'https://youtu.be/1vd7kWzMWWo',
-	'https://youtu.be/lzhWd8RspQw',
-	'https://youtu.be/8KJzWeoRlJ0',
-	'https://youtu.be/7s4A6V1Nfng',
-	'https://youtu.be/uWyFuZoLqgc',
-]
+const youtube = {
+	'TSMWmTO3vZ0': 'Do It All With You',
+	'CFwoSoLSa68': 'Two Minds (Live)',
+	'1vd7kWzMWWo': 'Blue Jean Baby',
+	'lzhWd8RspQw': 'Train Song (Cover)',
+	'8KJzWeoRlJ0': 'Midnight Hours',
+	'7s4A6V1Nfng': 'What If/I Wish',
+	'uWyFuZoLqgc': 'In A While (Live)',
+}
 
 const nav = ['home', 'about', 'media', 'contact', 'subscribe']
 
-export { about, contact, footer, subscribe, media, nav }
+export { about, contact, footer, subscribe, youtube, nav }
