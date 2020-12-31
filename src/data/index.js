@@ -20,6 +20,7 @@ const contact = {
 }
 
 const footer = {
+	// spotify failing to load sourcemap...
 	spotify: 'https://open.spotify.com/embed/album/3aBvYsTSyCAzGyp1buNzXz',
 	linktree: 'https://smarturl.it/howelsecanitellyou',
 	social: {
