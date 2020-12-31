@@ -46,5 +46,6 @@ const media = [
 	'https://youtu.be/uWyFuZoLqgc',
 ]
 
-const nav = ['home', 'about', 'media', 'contact', 'subsribe']
+const nav = ['home', 'about', 'media', 'contact', 'subscribe']
+
 export { about, contact, footer, subscribe, media, nav }

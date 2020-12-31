@@ -13,7 +13,7 @@ export default function MailingList(props) {
     <div className="subscribe-page">
       <h3>Let's Stay in Touch</h3>
       <p className="signup">Sign up to receive news and updates</p>
-      <form className={props.subscribe} action={post} method="POST" noValidate >
+      <form className='mailing-list' action={post} method="POST" noValidate >
         <input type="hidden" name="u" value={unique}/>
         <input type="hidden" name="id" value={id}/>
         <label htmlFor='TEXTYUI_3'>

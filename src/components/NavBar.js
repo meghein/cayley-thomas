@@ -23,7 +23,7 @@ export default function NavBar(props) {
   const list = nav.map((item, index) => {
     let data, title;
     item === 'home' ? data = item : data = `${item} bar`
-    item === 'subsribe' ? title = 'MAILING LIST' : title = item.toUpperCase()
+    item === 'subscribe' ? title = 'MAILING LIST' : title = item.toUpperCase()
     return <li onClick={clickHandler} data-id={data} key={`nav${index}`}>{title}</li>
   })
 
