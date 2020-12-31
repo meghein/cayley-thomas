@@ -30,12 +30,6 @@ const footer = {
 	
 }
 
-const subscribe = {
-	post: 'https://cayleythomas.us20.list-manage.com/subscribe/post',
-	unique: '78686e4b82246c5bba3a92bd0',
-	id: 'fef6220761',
-}
-
 const youtube = {
 	'TSMWmTO3vZ0': 'Do It All With You',
 	'CFwoSoLSa68': 'Two Minds (Live)',
@@ -48,4 +42,4 @@ const youtube = {
 
 const nav = ['home', 'about', 'media', 'contact', 'subscribe']
 
-export { about, contact, footer, subscribe, youtube, nav }
+export { about, contact, footer, youtube, nav }
