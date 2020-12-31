@@ -19,11 +19,12 @@ A portfolio built with React with embedded Spotify, YouTube, and MailChimp servi
 
 ## Dependencies
 
-- FontAwesome for React
 - Antd 4.6.x or above
 - Node-sass 4.14.1 or above
+- Prop-types 15.7.x or above
 - React 16.13.x or above
+- React-cookie 4.0 or above
 - React-dom
-- React-player 2.6.x or above
 - React-scripts 3.4.3
 - React-spotify-player 1.0.x or above
+- Typescript
