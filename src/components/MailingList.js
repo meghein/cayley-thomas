@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { subscribe } from '../data';
+// import { subscribe } from '../data';
 import './MailingList.scss';
 
 export default function MailingList(props) {
@@ -7,15 +7,14 @@ export default function MailingList(props) {
     emailValue: '',
     nameValue: '',
   });
-  const { post, unique, id } = subscribe;
-
+  
   return (
     <div className="subscribe-page">
       <h3>Let's Stay in Touch</h3>
       <p className="signup">Sign up to receive news and updates</p>
-      <form className='mailing-list' action={post} method="POST" noValidate >
-        <input type="hidden" name="u" value={unique}/>
-        <input type="hidden" name="id" value={id}/>
+      <form className='mailing-list' action={process.env.REACT_APP_POST} method="POST" noValidate >
+        <input type="hidden" name="u" value={process.env.REACT_APP_UNIQUE}/>
+        <input type="hidden" name="id" value={process.env.REACT_APP_ID}/>
         <label htmlFor='TEXTYUI_3'>
             <h4 className="name">Name:</h4>
             <input 
