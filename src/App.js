@@ -1,47 +1,33 @@
 import React, { Suspense } from 'react'
-import NavBar from './components/NavBar'
-import About from './components/About'
-import Media from './components/Media'
-import Contact from './components/Contact'
-import MailingList from './components/MailingList'
-import Footer from './components/Footer'
-import Factor from './components/Factor'
-import './App.scss';
+import { Root, Routes } from 'react-static'
+import { Switch } from 'react-router-dom'
+// import smoothScrollPolyfill from 'smoothscroll-polyfill'
+import { Normalize } from 'styled-normalize'
+import { ThemeProvider as EvergreenTheme } from 'evergreen-ui'
+import { ThemeProvider } from 'styled-components'
+import { useEvergreenTheme, GlobalStyle, theme } from 'theme'
+import { Spinner, Router } from 'components/base'
 
-
-export default function App() {
-  const [page, setPage] = useState('home')
-
+const App = () => {
+  const evergreenTheme = useEvergreenTheme()
+  // smoothScrollPolyfill.polyfill()
   return (
-    <div className="App">
-      <Footer page={page}/>
-      <div id="header" className={page}>
-        <img src="images/wordmark.png" alt="wordmark"/>
-        <NavBar setPage={setPage} id="nav"/>
-      </div>
-      {page === 'home' &&
-        <div className="home-page"/>
-      }
-      <div className="page">
-        {page === 'about bar' &&
-          <>
-            <About/>
-            <Factor/>
-          </>
-        }
-        {page === 'media bar' &&
-          <>
-            <Media/>
-            <Factor/>
-          </>
-        }
-        {/* {page === 'contact bar' &&
-          <Contact/>
-        } */}
-        {page === 'subscribe bar' &&
-          <MailingList/>
-        }
-      </div>
-    </div>
-  );
+    <Root>
+      <ThemeProvider theme={theme}>
+        <GlobalStyle />
+        <EvergreenTheme value={evergreenTheme}>
+          <Router>
+            <Normalize />
+            <Suspense fallback={<Spinner />}>
+              <Switch>
+                <Routes default />
+              </Switch>
+            </Suspense>
+          </Router>
+        </EvergreenTheme>
+      </ThemeProvider>
+    </Root>
+  )
 }
+
+export default App
