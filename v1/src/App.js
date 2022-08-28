@@ -35,9 +35,9 @@ export default function App() {
             <Factor/>
           </>
         }
-        {page === 'contact bar' &&
+        {/* {page === 'contact bar' &&
           <Contact/>
-        }
+        } */}
         {page === 'subscribe bar' &&
           <MailingList/>
         }
