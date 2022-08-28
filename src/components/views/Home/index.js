@@ -1,14 +1,19 @@
 import React from 'react'
-import { Heading1, Heading3, GridContainer } from 'components/base'
-import { MediaLinks } from './components/MediaLinks'
+import { Pane } from 'evergreen-ui'
+import { Header } from 'components/layout'
 
 const Home = () => {
   return (
-    <GridContainer placeContent='center' justifyContent='center' id='home'>
-      <Heading1 size={900}>COMING BACK SOON!</Heading1>
-      <Heading3>(currently under maintenance)</Heading3>
-      <MediaLinks />
-    </GridContainer>
+    <Pane
+      minHeight='100vh'
+      backgroundImage='url("/images/splash-page.jpg")'
+      backgroundSize='cover'
+      backgroundRepeat='no-repeat'
+      backgroundPosition='center top'
+      id='home'
+    >
+      <Header />
+    </Pane>
   )
 }
 

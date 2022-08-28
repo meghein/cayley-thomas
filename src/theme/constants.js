@@ -1,6 +1,7 @@
 const COLOR = {
   bone: '#A5A58D',
   background: '#DDBEA9',
+  main: '#fbf6ec',
   // bone: '#DEDBCA',
   eggShell: '#F4F1DE', // primary
   lightPink: '#EFD4BF',

@@ -7,8 +7,9 @@ const GlobalCSS = createGlobalStyle`
     margin: 0;
     padding: 0;
     background-color: ${({ theme }) => theme.background};
-    font-family: ${({ theme }) => theme.bodyFont};
-    font-size: ${({ theme }) => theme.baseFontSize};
+    font-family: 'Nunito Sans', sans-serif;
+  font-weight: 200;
+  font-size: 18px;
     color: ${({ theme }) => theme.purple};
     text-align: center;
 
@@ -18,15 +19,15 @@ const GlobalCSS = createGlobalStyle`
 
     a {
       text-decoration: none;
-      color: ${({ theme }) => theme.bone};
+      color: ${({ theme }) => theme.main};
       &:hover {
-        color: ${({ theme }) => theme.bone};
+        color: ${({ theme }) => theme.main};
       }
     }
 
     // for nav links:
     .highlight {
-      color: ${({ theme }) => theme.bone};
+      color: ${({ theme }) => theme.main};
     }
 
     .fixed-nav {
