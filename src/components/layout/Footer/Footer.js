@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import { footer } from '../data'
-import './Footer.scss'
+import { footerLinks } from './constants'
+// import './Footer.scss'
 
 export default function Footer (props) {
   const [showModal, setShowModal] = useState(false)
-  const { spotify, linktree, social } = footer
+  const { spotify, linktree, social } = footerLinks
 
   function openModal () {
     setShowModal(true)
