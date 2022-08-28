@@ -28,7 +28,7 @@ const footer = {
 		instagram: 'https://www.instagram.com/hicayleythomas/',
 		twitter: 'https://twitter.com/hicayleythomas',
 	}
-	
+
 }
 
 const youtube = {
@@ -41,6 +41,6 @@ const youtube = {
 	'uWyFuZoLqgc': 'In A While (Live)',
 }
 
-const nav = ['home', 'about', 'media', 'contact', 'subscribe']
+const nav = ['home', 'about', 'media', 'subscribe']
 
 export { about, contact, footer, youtube, nav }

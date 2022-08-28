@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { Suspense } from 'react'
 import NavBar from './components/NavBar'
 import About from './components/About'
 import Media from './components/Media'
@@ -35,9 +35,9 @@ export default function App() {
             <Factor/>
           </>
         }
-        {page === 'contact bar' &&
+        {/* {page === 'contact bar' &&
           <Contact/>
-        }
+        } */}
         {page === 'subscribe bar' &&
           <MailingList/>
         }
