@@ -3,7 +3,6 @@ import styled from 'styled-components'
 export const NavBar = styled.ul`
   display: none;
   width: 100%;
-  height: 3.5em;
   padding: 0;
   list-style: none;
   @media (min-width: 551px) {

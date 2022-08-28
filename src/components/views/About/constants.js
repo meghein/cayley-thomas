@@ -1,7 +1,7 @@
 export const bio = {
   profilePicture: {
-    src: 'images/in-flowers.jpg',
-    alt: 'About in flowers'
+    src: 'images/work3.jpg',
+    alt: 'About'
   },
   summary: [
     'Cayley Thomas is a multidisciplinary singer, songwriter and performer from Edmonton, Alberta whose natural affinity for constructing catchy melodies is matched by her striking vocal range and versatility. Classically trained in voice & theatre with a Bachelor of Fine Arts in Acting from the University of Alberta, Thomas weaves sensitive eccentricities and cathartic declarations into her own brand of unique, knowledgeable pop.',

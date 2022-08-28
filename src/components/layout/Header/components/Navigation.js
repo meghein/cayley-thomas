@@ -5,16 +5,21 @@ import { Link } from 'react-router-dom'
 
 const navItems = ['home', 'about', 'media', 'subscribe']
 
-export function Navigation (props) {
+function sortNavItem (item) {
+  return {
+    title: item === 'subscribe' ? 'MAILING LIST' : item.toUpperCase(),
+    link: item === 'home' ? '/' : `/${item}`
+  }
+}
+
+export function Navigation () {
   return (
     <NavBar>
       {navItems.map((item) => {
-        const title = item === 'subscribe'
-          ? 'MAILING LIST'
-          : item.toUpperCase()
+        const { title, link } = sortNavItem(item)
         return (
           <Box key={item} as='li'>
-            <Link to={`/${item}`}>{title}</Link>
+            <Link to={link}>{title}</Link>
           </Box>
         )
       })}

@@ -7,27 +7,24 @@ const GlobalCSS = createGlobalStyle`
     margin: 0;
     padding: 0;
     background-color: ${({ theme }) => theme.background};
+    background-image: url("/images/binding-light.png");
     font-family: 'Nunito Sans', sans-serif;
-  font-weight: 200;
-  font-size: 18px;
-    color: ${({ theme }) => theme.purple};
+    font-weight: 200;
+    font-size: 18px;
+    color: ${({ theme }) => theme.aboutGreen};
     text-align: center;
-
-    // h1, h2, h3, h4 {
-    //   font-family: ${({ theme }) => theme.displayFont}
-    // }
 
     a {
       text-decoration: none;
-      color: ${({ theme }) => theme.main};
+      color: ${({ theme }) => theme.offWhite};
       &:hover {
-        color: ${({ theme }) => theme.main};
+        color: ${({ theme }) => theme.offWhite};
       }
     }
 
     // for nav links:
     .highlight {
-      color: ${({ theme }) => theme.main};
+      color: ${({ theme }) => theme.offWhite};
     }
 
     .fixed-nav {
