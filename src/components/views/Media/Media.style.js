@@ -1,0 +1,16 @@
+import styled from 'styled-components'
+
+
+// .media-player {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   padding-top: 9em;
+//   @media (min-width: 551px){
+//     padding-top: 10.5em
+//   }
+//   iframe {
+//     padding-bottom: 3em;
+//     max-width: 90%;
+//   }
+// }

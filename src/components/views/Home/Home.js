@@ -1,6 +1,6 @@
 import React from 'react'
 import { Pane } from 'evergreen-ui'
-import { Header } from 'components/layout'
+import { Footer, Header } from 'components/layout'
 
 export function Home () {
   return (
@@ -13,6 +13,7 @@ export function Home () {
       id='home'
     >
       <Header />
+      <Footer />
     </Pane>
   )
 }

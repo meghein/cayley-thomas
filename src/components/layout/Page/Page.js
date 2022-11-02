@@ -4,7 +4,7 @@ import { Pane } from 'evergreen-ui'
 import { Footer } from '../Footer'
 import { Header } from '../Header'
 
-export function Page ({ children }) {
+export function Page ({ children, paddingTop = 0 }) {
   return (
     <>
       <Header />
@@ -14,6 +14,7 @@ export function Page ({ children }) {
         alignItems='center'
         backgroundColor='#A5A58D'
         backgroundImage='url("/images/fabric.png")'
+        paddingTop={paddingTop}
       >
         {children}
       </FlexContainer>

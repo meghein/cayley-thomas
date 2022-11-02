@@ -4,7 +4,7 @@ import { Spinner as EvergreenSpinner } from 'evergreen-ui'
 import { GridContainer } from '../Container'
 
 const Background = styled.div`
-  background-color: #3D405B;
+  background-color: #A5A58D;
 `
 
 export const Spinner = () => {
